@@ -1,0 +1,9 @@
+# Query: gemini-3.7-flash
+# ContextLines: 1
+
+1 result - 1 file
+
+Adopcion-UTS\src\services\ai-recommendations.ts:
+  97      const model = getGenerativeModel(ai, {
+  98:       model: "gemini-3.5-flash",
+  99        generationConfig: {

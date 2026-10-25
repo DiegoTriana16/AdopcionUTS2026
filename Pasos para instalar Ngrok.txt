@@ -1,0 +1,45 @@
+Ingresa a este link
+https://ngrok.com/download/windows 
+
+iniciar sesión da click en Quickstart y lo envia a esta ruta
+https://dashboard.ngrok.com/get-started/gateway 
+
+instala ngrok desde micrsoft store installer
+cuando se instala ejecuta ese comando "ngrok config add-authtoken $YOUR_AUTHTOKEN" el token lo puede visualizar dando click en show authtoken
+
+
+después abre una terminal ejecuta este comando
+ngrok config edit
+
+abrirá un archivo de texto llamado ngrok.yml pegara este código
+
+version: 3
+agent:
+  authtoken: $YOUR_AUTHTOKEN
+endpoints:
+  - name: your_endpoint_name
+    url: https://food-widget-residual.ngrok-free.dev
+    upstream:
+      url: 3000
+
+el authtoken es el mismo que ejecuta anteriormente el que da al instalar
+
+entonces inicia el servidor del api de imágenes, primero npm i para instalar y luego npm run dev para ejecutar
+
+cuando este encendido ejecuta  "ngrok http 3000" para iniciar,y ya puede empezar la app movil
+
+correo Gmail
+adopcionuts@gmail.com
+AdopcionUTS1.#
+
+
+adopcion569@gmail.com
+AdopcionUTS1.
+
+administrador@gmail.com
+Diego1.
+
+cd AdopcionServer
+bun run dev
+cd Adopcion-UTS
+npx expo start
