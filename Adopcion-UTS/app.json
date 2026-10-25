@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Adopcion-UTS",
+    "slug": "Adopcion-UTS",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/img/adopta-no-compres.png",
+    "scheme": "adopcionuts",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/img/adopta-no-compres.png",
+        "backgroundImage": "./assets/img/adopta-no-compres.png",
+        "monochromeImage": "./assets/img/adopta-no-compres.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/img/adopta-no-compres.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/img/adopta-no-compres.png",
+          "imageWidth": 76
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
